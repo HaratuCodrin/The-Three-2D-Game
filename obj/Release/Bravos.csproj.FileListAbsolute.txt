@@ -1,0 +1,6 @@
+F:\C#\Bravo\Bravos\bin\Release\Bravos.exe.config
+F:\C#\Bravo\Bravos\bin\Release\Bravos.exe
+F:\C#\Bravo\Bravos\bin\Release\Bravos.pdb
+F:\C#\Bravo\Bravos\obj\Release\Bravos.csproj.CoreCompileInputs.cache
+F:\C#\Bravo\Bravos\obj\Release\Bravos.exe
+F:\C#\Bravo\Bravos\obj\Release\Bravos.pdb

@@ -1,0 +1,40 @@
+F:\C#\Bravo\Bravos\bin\Debug\Bravos.exe.config
+F:\C#\Bravo\Bravos\bin\Debug\Bravos.exe
+F:\C#\Bravo\Bravos\bin\Debug\Bravos.pdb
+F:\C#\Bravo\Bravos\obj\Debug\Bravos.csprojAssemblyReference.cache
+F:\C#\Bravo\Bravos\obj\Debug\Bravos.csproj.CoreCompileInputs.cache
+F:\C#\Bravo\Bravos\obj\Debug\Bravos.exe
+F:\C#\Bravo\Bravos\obj\Debug\Bravos.pdb
+F:\C#\Bravo\Bravos\obj\Debug\Bravos.Properties.Resources.resources
+F:\C#\Bravo\Bravos\obj\Debug\Bravos.csproj.GenerateResource.cache
+F:\C#\Bravo\Bravos\obj\Debug\Bravos.Canvas.resources
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\Bravos.exe.config
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\Bravos.exe
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\Bravos.pdb
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.Canvas.resources
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.Properties.Resources.resources
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.csproj.GenerateResource.cache
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.csproj.CoreCompileInputs.cache
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.exe
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.pdb
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.csprojAssemblyReference.cache
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\Interop.WMPLib.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\AxInterop.WMPLib.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Interop.WMPLib.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\AxInterop.WMPLib.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.csproj.ResolveComReference.cache
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\Microsoft.Win32.Registry.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.Asio.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.Core.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.Midi.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.Wasapi.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.WinForms.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.WinMM.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\System.Security.AccessControl.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\System.Security.Principal.Windows.dll
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\Microsoft.Win32.Registry.xml
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\NAudio.xml
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\System.Security.AccessControl.xml
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\bin\Debug\System.Security.Principal.Windows.xml
+F:\Faculta\ANUL III SEM 2\InfoC#\Bravos\obj\Debug\Bravos.csproj.CopyComplete

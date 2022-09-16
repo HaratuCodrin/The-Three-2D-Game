@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{445F7904-348F-479A-B280-0620FB72D909}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Bravos</RootNamespace>
+    <AssemblyName>Bravos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Win32.Registry.4.7.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.2.0.1\lib\netstandard2.0\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Asio, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Asio.2.0.0\lib\netstandard2.0\NAudio.Asio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Core.2.0.0\lib\netstandard2.0\NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Midi, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Midi.2.0.1\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Wasapi, Version=2.0.0.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.Wasapi.2.0.0\lib\netstandard2.0\NAudio.Wasapi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinForms, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.WinForms.2.0.1\lib\net472\NAudio.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinMM, Version=2.0.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.WinMM.2.0.1\lib\netstandard2.0\NAudio.WinMM.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.4.7.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Canvas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entities\NonPlayable\DumbEnemy.cs" />
+    <Compile Include="Entities\NonPlayable\Enemy.cs" />
+    <Compile Include="Entities\Objects\Cyclone.cs" />
+    <Compile Include="Entities\Objects\Gologan.cs" />
+    <Compile Include="Entities\Objects\Spoon.cs" />
+    <Compile Include="Entities\Objects\TrapWheel.cs" />
+    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Entities\LobbyEntity.cs" />
+    <Compile Include="Entities\LobbyPlayer.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\PlatformerEntity.cs" />
+    <Compile Include="Entities\PlayerTypes\Codrin.cs" />
+    <Compile Include="Entities\PlayerTypes\Cosmin.cs" />
+    <Compile Include="Entities\PlayerTypes\Dan.cs" />
+    <Compile Include="GamePanel.cs" />
+    <Compile Include="GameStates\GameStateManager.cs" />
+    <Compile Include="GameStates\GameState.cs" />
+    <Compile Include="GameStates\Level1.cs" />
+    <Compile Include="GameStates\Lobby.cs" />
+    <Compile Include="GameStates\MenuState.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shape.cs" />
+    <Compile Include="TestGame.cs" />
+    <Compile Include="Tiles\Background.cs" />
+    <Compile Include="Tiles\Tile.cs" />
+    <Compile Include="Tiles\TileManager.cs" />
+    <Compile Include="Tiles\TileMap.cs" />
+    <Compile Include="Tools\Animation.cs" />
+    <Compile Include="Tools\CustomArray.cs" />
+    <Compile Include="Tools\Sound.cs" />
+    <Compile Include="Tools\Sprite.cs" />
+    <Compile Include="Tools\CollisionBox.cs" />
+    <Compile Include="Tools\UI\MessageBox.cs" />
+    <Compile Include="Tools\Vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Canvas.resx">
+      <DependentUpon>Canvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Maps\LevelTest.tmx" />
+    <None Include="packages.config" />
+    <None Include="Resources\grassbg1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\menubg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\grassbg1.gif" />
+    <Content Include="bin\Debug\Enemies\Bat.png" />
+    <Content Include="bin\Debug\Enemies\Dog1\Attack.png" />
+    <Content Include="bin\Debug\Enemies\Dog1\Death.png" />
+    <Content Include="bin\Debug\Enemies\Dog1\Hurt.png" />
+    <Content Include="bin\Debug\Enemies\Dog1\Idle.png" />
+    <Content Include="bin\Debug\Enemies\Dog1\Walk.png" />
+    <Content Include="bin\Debug\Enemies\Dog2\Attack.png" />
+    <Content Include="bin\Debug\Enemies\Dog2\Death.png" />
+    <Content Include="bin\Debug\Enemies\Dog2\Hurt.png" />
+    <Content Include="bin\Debug\Enemies\Dog2\Idle.png" />
+    <Content Include="bin\Debug\Enemies\Dog2\Walk.png" />
+    <Content Include="bin\Debug\Enemies\Eyeball.png" />
+    <Content Include="bin\Debug\HUD\Abilities\Cosmin_R.png" />
+    <Content Include="bin\Debug\HUD\Abilities\Cosmin_E.png" />
+    <Content Include="bin\Debug\HUD\Abilities\Codrin_E.png" />
+    <Content Include="bin\Debug\HUD\Abilities\Dan_E.png" />
+    <Content Include="bin\Debug\HUD\Abilities\Dan_R.png" />
+    <Content Include="bin\Debug\HUD\Abilities\Codrin_R.png" />
+    <Content Include="bin\Debug\HUD\frame.png" />
+    <Content Include="bin\Debug\HUD\frame2.png" />
+    <Content Include="bin\Debug\HUD\heart.png" />
+    <Content Include="bin\Debug\Maps\BaseTileMapLobby.xml" />
+    <Content Include="bin\Debug\Maps\LevelTest.xml" />
+    <Content Include="bin\Debug\Objects\Gologani\Ban.png" />
+    <Content Include="bin\Debug\Objects\Gologani\Argint.png" />
+    <Content Include="bin\Debug\Objects\Gologani\Aur.png" />
+    <Content Include="bin\Debug\Objects\Gologani\Cupru.png" />
+    <Content Include="bin\Debug\Objects\Gologani\Rubin.png" />
+    <Content Include="bin\Debug\Objects\Gologani\Smarald.png" />
+    <Content Include="bin\Debug\Objects\Spoon.png" />
+    <Content Include="bin\Debug\Objects\Traps\Arrow_Double_Jump.png" />
+    <Content Include="bin\Debug\Objects\Traps\Fan.png" />
+    <Content Include="bin\Debug\Objects\Traps\Jumper.png" />
+    <Content Include="bin\Debug\Objects\Traps\Spear.png" />
+    <Content Include="bin\Debug\Objects\Traps\TrapWheel.png" />
+    <Content Include="bin\Debug\Player\Codrin\Codrin_Dash.png" />
+    <Content Include="bin\Debug\Player\Codrin\Codrin_Idle.png" />
+    <Content Include="bin\Debug\Player\Codrin\Codrin_Jump.png" />
+    <Content Include="bin\Debug\Player\Codrin\Codrin_Walk.png" />
+    <Content Include="bin\Debug\Player\Cosmin\Cosmin_Crouch.png" />
+    <Content Include="bin\Debug\Player\Cosmin\Cosmin_Death.png" />
+    <Content Include="bin\Debug\Player\Cosmin\Cosmin_Idle.png" />
+    <Content Include="bin\Debug\Player\Cosmin\Cosmin_Jump.png" />
+    <Content Include="bin\Debug\Player\Cosmin\Cosmin_Run.png" />
+    <Content Include="bin\Debug\Player\LobbyCodrin.png" />
+    <Content Include="bin\Debug\Player\Fullmain.png" />
+    <Content Include="bin\Debug\Player\Knight\Hero-attack-Sheet.png" />
+    <Content Include="bin\Debug\Player\Knight\Hero-die-Sheet.png" />
+    <Content Include="bin\Debug\Player\Knight\Hero-hit-Sheet.png" />
+    <Content Include="bin\Debug\Player\Knight\Hero-idle-Sheet.png" />
+    <Content Include="bin\Debug\Player\Knight\Hero-jump-Sheet.png" />
+    <Content Include="bin\Debug\Player\Knight\Hero-walk-Sheet.png" />
+    <Content Include="bin\Debug\Sounds\arcadeMusic.wav" />
+    <Content Include="bin\Debug\Sounds\menu.wav" />
+    <Content Include="bin\Debug\Sounds\retroClick.wav" />
+    <Content Include="bin\Debug\Sounds\smallHit.wav" />
+    <Content Include="bin\Debug\Sounds\spoon.wav" />
+    <Content Include="bin\Debug\TileSets\[TILESET] Tileset.png" />
+    <Content Include="Resources\Characters\DumbEnemy.png" />
+    <Content Include="Resources\Characters\JohnnyOGLobby.png" />
+    <Content Include="Resources\Characters\TileSets\grasstileset.png" />
+    <Content Include="Resources\Characters\TileSets\[TILESET] Tileset.png" />
+    <Content Include="Resources\Maps\BaseTileMapLobby.xml" />
+    <None Include="Resources\menubg.gif" />
+    <Content Include="Resources\TileSets\Grass.png" />
+    <Content Include="Resources\TileSets\grasstileset.png" />
+    <Content Include="Resources\TileSets\[TILESET] Tileset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
